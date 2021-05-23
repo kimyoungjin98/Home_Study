@@ -10,10 +10,10 @@ public interface StudentService {
 	
 	public StudentVO findById(Long st_seq);
 	
-//	public void insert();
-//	
-//	public void update();
-//	
-//	public void delete();
+	public Integer insert(StudentVO stVO);
+	
+	public Integer update(StudentVO stVO);
+	
+	public Integer delete(Long st_seq);
 	
 }

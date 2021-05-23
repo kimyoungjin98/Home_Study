@@ -17,7 +17,6 @@ document
 	.querySelector("table#stList")
 	.addEventListener("click", function(ev){
 	
-		
 		let tag_name = ev.target.tagName;
 		
 		if(tag_name == "TD"){
@@ -28,15 +27,29 @@ document
 			
 		document.location.href
 		="${rootPath}/student/info?st_seq=" + st_seq
-				
 		}
- 	
 		
+		})
+		
+		document
+		.querySelector("button")
+		.addEventListener("click",function(ev){
+		
+			let name = ev.target.tagName;
+			
+			if(name == "BUTTON"){
+				
+				document
+				.location
+				.href = "${rootPath}/student/insert"
+				
+			}
 		
 	})
+		
 })
 
-
+	
 </script>
 <style>
 table#stList {
@@ -49,15 +62,31 @@ table#stList {
 }
 
 table#stList th {
-	background-color: lightgray;
+	background-color: #E8CBC0;
 }
 
 table#stList tr:hover {
 	cursor: pointer;
-	background-color: lightgray;
+	background-color: #E8CBC0;
+}
+
+
+button {
+	font-size: 15px;
+	margin-left:25%;
+	padding:8px;
+	background-color:#E8CBC0; 
+}
+
+button:hover{
+	cursor:pointer;
+	background-color:#636FA4;
 }
 </style>
 <body>
+
+	<button>학생정보 입력</button>
+
 	<table id="stList">
 
 		<tr>

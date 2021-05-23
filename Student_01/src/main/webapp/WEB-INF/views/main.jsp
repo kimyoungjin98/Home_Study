@@ -10,7 +10,7 @@
 <style>
 h1{
 	box-sizing:border-box;
-	background: linear-gradient(to bottom, gray, white);
+	background: linear-gradient(to bottom, #E8CBC0, #636FA4);
 	color:white;
 	margin:20px;
 	text-align: center;
